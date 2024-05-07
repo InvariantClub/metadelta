@@ -1,0 +1,185 @@
+{
+  "version": 3,
+  "sources": [
+    {
+      "name": "default",
+      "kind": "postgres",
+      "tables": [
+        {
+          "table": {
+            "name": "gardener_location",
+            "schema": "public"
+          },
+          "object_relationships": [
+            {
+              "name": "gardener",
+              "using": {
+                "foreign_key_constraint_on": "gardener_id"
+              }
+            },
+            {
+              "name": "location",
+              "using": {
+                "foreign_key_constraint_on": "location_id"
+              }
+            }
+          ]
+        },
+        {
+          "table": {
+            "name": "location",
+            "schema": "public"
+          },
+          "array_relationships": [
+            {
+              "name": "gardener_locations",
+              "using": {
+                "foreign_key_constraint_on": {
+                  "column": "location_id",
+                  "table": {
+                    "name": "gardener_location",
+                    "schema": "public"
+                  }
+                }
+              }
+            },
+            {
+              "name": "plants",
+              "using": {
+                "foreign_key_constraint_on": {
+                  "column": "location_id",
+                  "table": {
+                    "name": "plant",
+                    "schema": "public"
+                  }
+                }
+              }
+            }
+          ],
+          "select_permissions": [
+            {
+              "role": "public",
+              "permission": {
+                "columns": [
+                  "name"
+                ],
+                "filter": {}
+              }
+            }
+          ]
+        },
+        {
+          "table": {
+            "name": "plant",
+            "schema": "public"
+          },
+          "object_relationships": [
+            {
+              "name": "location",
+              "using": {
+                "foreign_key_constraint_on": "location_id"
+              }
+            },
+            {
+              "name": "plant_type",
+              "using": {
+                "foreign_key_constraint_on": "plant_type_id"
+              }
+            }
+          ],
+          "select_permissions": [
+            {
+              "role": "public",
+              "permission": {
+                "columns": [
+                  "location_id",
+                  "main_colour",
+                  "name",
+                  "plant_type_id"
+                ],
+                "filter": {}
+              }
+            }
+          ]
+        },
+        {
+          "table": {
+            "name": "plant_type",
+            "schema": "public"
+          },
+          "array_relationships": [
+            {
+              "name": "plants",
+              "using": {
+                "foreign_key_constraint_on": {
+                  "column": "plant_type_id",
+                  "table": {
+                    "name": "plant",
+                    "schema": "public"
+                  }
+                }
+              }
+            }
+          ],
+          "select_permissions": [
+            {
+              "role": "public",
+              "permission": {
+                "columns": [
+                  "name"
+                ],
+                "filter": {}
+              }
+            }
+          ]
+        },
+        {
+          "table": {
+            "name": "schmardener",
+            "schema": "public"
+          },
+          "array_relationships": [
+            {
+              "name": "gardener_locations",
+              "using": {
+                "foreign_key_constraint_on": {
+                  "column": "gardener_id",
+                  "table": {
+                    "name": "gardener_location",
+                    "schema": "public"
+                  }
+                }
+              }
+            }
+          ],
+          "select_permissions": [
+            {
+              "role": "public",
+              "permission": {
+                "columns": [
+                  "name"
+                ],
+                "filter": {}
+              }
+            }
+          ]
+        }
+      ],
+      "configuration": {
+        "connection_info": {
+          "database_url": {
+            "from_env": "HASURA_GRAPHQL_DATABASE_URL"
+          },
+          "isolation_level": "read-committed",
+          "pool_settings": {
+            "connection_lifetime": 600,
+            "idle_timeout": 180,
+            "max_connections": 50,
+            "retries": 1
+          },
+          "use_prepared_statements": true
+        }
+      }
+    }
+  ]
+}

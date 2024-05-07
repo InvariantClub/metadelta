@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+cd cli && hpack && cd ..
+
+cabal install metadelta-cli --overwrite-policy=always
+cabal install hasura-to-icf --overwrite-policy=always

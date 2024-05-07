@@ -1,0 +1,38 @@
+name: Deploy Frontend to GitHub pages
+on:
+  push:
+    tags:
+      - 'frontend-*'
+
+
+concurrency:
+  group: "deploy-ui"
+  cancel-in-progress: true
+
+
+permissions:
+  contents: write
+
+
+jobs:
+  deploy-live-ui:
+    runs-on: ubuntu-latest
+    name: "Build and publish the metadelta ui"
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v4
+
+      - name: "Install Nix"
+        uses: cachix/install-nix-action@v25
+        with:
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: "Build"
+        run: |
+          cd frontend/
+          nix develop --command ./ci/build
+
+      - name: "Deploy"
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ./frontend/dist/

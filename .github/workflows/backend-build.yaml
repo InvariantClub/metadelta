@@ -1,0 +1,32 @@
+name: build and test backend
+
+on:
+  push:
+    branches:
+      - "main"
+
+concurrency:
+  group: "build-backend"
+  cancel-in-progress: true
+
+
+permissions:
+  contents: write
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install nix
+        uses: cachix/install-nix-action@v25
+        with:
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and test
+        run: |
+          cd backend/
+          nix develop --command ./ci/build

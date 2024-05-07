@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+set -euxo pipefail
+
+runghc css/Css.hs>./static/css.css
+
+npm i
+npx elm-land build
+
+rm -rf dist/all-examples.json
+rm -rf dist/examples
+
+cp CNAME    dist/CNAME
+cp 404.html dist/404.html
+
+dist_dir=$(pwd)/dist
+
+mkdir dist/examples
+temp_dir=$(mktemp -d)
+
+git clone https://github.com/InvariantClub/demo-database ${temp_dir}
+
+cd $temp_dir
+
+# Note: This always uses the _latest_ version of the Metadelta CLI; I.e. it
+# needs to be deployed _before_ this is run.
+./scripts/compute-demo-diff.sh 4a26090 98b1123 >${dist_dir}/examples/demo-database-initial-permissions.json
+./scripts/compute-demo-diff.sh 98b1123 3b627cd >${dist_dir}/examples/demo-database-refined-permissions.json
+./scripts/compute-demo-diff.sh 3b627cd 98b1123 >${dist_dir}/examples/demo-database-refined-permissions-other-way.json
+
+echo '[ "demo-database-initial-permissions.json", "demo-database-refined-permissions.json", "demo-database-refined-permissions-other-way.json" ]'>${dist_dir}/all-examples.json

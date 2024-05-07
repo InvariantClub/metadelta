@@ -1,0 +1,36 @@
+name: metadelta-cli
+version: 0.1.3.0
+language: GHC2021
+
+ghc-options: -Wall -fno-warn-incomplete-uni-patterns
+
+default-extensions:
+  - DataKinds
+  - DeriveAnyClass
+  - DeriveGeneric
+  - DerivingStrategies
+  - DerivingVia
+  - DuplicateRecordFields
+  - GADTs
+  - ImportQualifiedPost
+  - LambdaCase
+  - OverloadedLabels
+  - OverloadedStrings
+  - PackageImports
+  - TypeFamilies
+
+dependencies:
+  - base >= 4.7 && < 5
+  - aeson
+  - bytestring
+  - dotenv
+  - hasura-to-icf
+  - optparse-generic
+  - text
+  - time
+  - yaml-includes
+
+executables:
+  metadelta:
+    source-dirs: app
+    main: Main.hs

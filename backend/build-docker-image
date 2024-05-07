@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -euxo pipefail
+
+nix build .#metadelta-docker-image
+
+docker load -i ./result

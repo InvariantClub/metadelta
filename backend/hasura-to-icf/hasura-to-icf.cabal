@@ -1,0 +1,176 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.2.
+--
+-- see: https://github.com/sol/hpack
+
+name:           hasura-to-icf
+version:        1.0.0.0
+build-type:     Simple
+
+library
+  exposed-modules:
+      Hasa.App
+      Hasa.Conversion
+      Hasa.Diff
+      Hasa.Types.Frontend
+      Hasa.Types.Hasura
+  other-modules:
+      Paths_hasura_to_icf
+  hs-source-dirs:
+      src
+  default-extensions:
+      DataKinds
+      DeriveAnyClass
+      DeriveGeneric
+      DerivingStrategies
+      DerivingVia
+      DuplicateRecordFields
+      GADTs
+      ImportQualifiedPost
+      LambdaCase
+      OverloadedLabels
+      OverloadedStrings
+      PackageImports
+      TypeFamilies
+      TypeOperators
+  ghc-options: -Wall -fno-warn-incomplete-uni-patterns
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , extra
+    , generic-lens
+    , lens
+    , mtl
+    , optparse-generic
+    , patience
+    , template-haskell
+    , text
+    , time
+  default-language: GHC2021
+
+executable gen-examples
+  main-is: Main.hs
+  other-modules:
+      Paths_hasura_to_icf
+  hs-source-dirs:
+      gen-examples
+  default-extensions:
+      DataKinds
+      DeriveAnyClass
+      DeriveGeneric
+      DerivingStrategies
+      DerivingVia
+      DuplicateRecordFields
+      GADTs
+      ImportQualifiedPost
+      LambdaCase
+      OverloadedLabels
+      OverloadedStrings
+      PackageImports
+      TypeFamilies
+      TypeOperators
+  ghc-options: -Wall -fno-warn-incomplete-uni-patterns
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , extra
+    , generic-lens
+    , hasura-to-icf
+    , lens
+    , mtl
+    , optparse-generic
+    , patience
+    , template-haskell
+    , text
+    , time
+  default-language: GHC2021
+
+executable hasura-to-icf
+  main-is: Main.hs
+  other-modules:
+      Paths_hasura_to_icf
+  hs-source-dirs:
+      app
+  default-extensions:
+      DataKinds
+      DeriveAnyClass
+      DeriveGeneric
+      DerivingStrategies
+      DerivingVia
+      DuplicateRecordFields
+      GADTs
+      ImportQualifiedPost
+      LambdaCase
+      OverloadedLabels
+      OverloadedStrings
+      PackageImports
+      TypeFamilies
+      TypeOperators
+  ghc-options: -Wall -fno-warn-incomplete-uni-patterns
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , dotenv
+    , extra
+    , generic-lens
+    , hasura-to-icf
+    , lens
+    , mtl
+    , optparse-generic
+    , patience
+    , template-haskell
+    , text
+    , time
+  default-language: GHC2021
+
+test-suite spec
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      DiffSpec
+      Generators
+      Paths_hasura_to_icf
+  hs-source-dirs:
+      test
+  default-extensions:
+      DataKinds
+      DeriveAnyClass
+      DeriveGeneric
+      DerivingStrategies
+      DerivingVia
+      DuplicateRecordFields
+      GADTs
+      ImportQualifiedPost
+      LambdaCase
+      OverloadedLabels
+      OverloadedStrings
+      PackageImports
+      TypeFamilies
+      TypeOperators
+  ghc-options: -Wall -fno-warn-incomplete-uni-patterns -threaded -O0
+  build-depends:
+      HUnit
+    , QuickCheck
+    , aeson
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , extra
+    , generic-lens
+    , hasura-to-icf
+    , hspec
+    , lens
+    , mtl
+    , optparse-generic
+    , patience
+    , template-haskell
+    , text
+    , time
+  default-language: GHC2021

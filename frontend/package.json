@@ -1,0 +1,9 @@
+{
+  "version": "0.1.0.0",
+  "dependencies": {
+    "@zip.js/zip.js": "^2.7.34",
+    "elm-land": "^0.20.1",
+    "lil-gui": "^0.19.1",
+    "octokit": "^3.1.2"
+  }
+}

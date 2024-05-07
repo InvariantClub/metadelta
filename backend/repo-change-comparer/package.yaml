@@ -1,0 +1,46 @@
+name:                repo-change-comparer
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/InvariantClub/metadelta
+license:             BSD3
+author:              Noon van der Silk
+maintainer:          noonsilk@gmail.com
+copyright:           2024 Noon van der Silk
+category:            Web
+extra-source-files:
+  - README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - bytestring
+  - directory
+  - filepath
+  - optparse-applicative
+  - text
+  - turtle
+
+default-extensions:
+  - DeriveAnyClass
+  - DeriveGeneric
+  - DerivingStrategies
+  - ImportQualifiedPost
+  - OverloadedStrings
+  - PackageImports
+  - ScopedTypeVariables
+  - TypeApplications
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-home-modules
+- -Wpartial-fields
+- -Wredundant-constraints
+
+executables:
+  repo-change-comparer:
+    source-dirs:      src
+    main:             Main.hs

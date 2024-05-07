@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+cd static/examples/
+
+ls *.json | sort | jq -R -s 'split("\n") -[""]' >../../static/all-examples.json

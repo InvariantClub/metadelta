@@ -1,0 +1,73 @@
+name: hasura-to-icf
+version: 1.0.0.0
+language: GHC2021
+
+
+ghc-options: -Wall -fno-warn-incomplete-uni-patterns
+
+
+default-extensions:
+  - DataKinds
+  - DeriveAnyClass
+  - DeriveGeneric
+  - DerivingStrategies
+  - DerivingVia
+  - DuplicateRecordFields
+  - GADTs
+  - ImportQualifiedPost
+  - LambdaCase
+  - OverloadedLabels
+  - OverloadedStrings
+  - PackageImports
+  - TypeFamilies
+  - TypeOperators
+
+
+dependencies:
+  - base >= 4.7 && < 5
+  - aeson
+  - bytestring
+  - containers
+  - extra
+  - generic-lens
+  - lens
+  - mtl
+  - optparse-generic
+  - patience
+  - template-haskell
+  - text
+  - time
+
+
+library:
+  source-dirs: src
+
+
+tests:
+  spec:
+    main: "Spec.hs"
+    ghc-options: "-threaded -O0"
+    source-dirs:
+      - test
+    dependencies:
+      - HUnit
+      - QuickCheck
+      - hasura-to-icf
+      - hspec
+
+
+executables:
+  gen-examples:
+    source-dirs: gen-examples
+    main: Main.hs
+    dependencies:
+      - hasura-to-icf
+
+
+  hasura-to-icf:
+    source-dirs: app
+    main: Main.hs
+    dependencies:
+      - dotenv
+      - hasura-to-icf
+

@@ -1,0 +1,42 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.2.
+--
+-- see: https://github.com/sol/hpack
+
+name:           metadelta-cli
+version:        0.1.3.0
+build-type:     Simple
+
+executable metadelta
+  main-is: Main.hs
+  other-modules:
+      Paths_metadelta_cli
+  hs-source-dirs:
+      app
+  default-extensions:
+      DataKinds
+      DeriveAnyClass
+      DeriveGeneric
+      DerivingStrategies
+      DerivingVia
+      DuplicateRecordFields
+      GADTs
+      ImportQualifiedPost
+      LambdaCase
+      OverloadedLabels
+      OverloadedStrings
+      PackageImports
+      TypeFamilies
+  ghc-options: -Wall -fno-warn-incomplete-uni-patterns
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , bytestring
+    , dotenv
+    , hasura-to-icf
+    , optparse-generic
+    , text
+    , time
+    , yaml-includes
+  default-language: GHC2021
