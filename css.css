@@ -1,0 +1,1271 @@
+
+@-webkit-keyframes wiggle
+{
+0.0% 
+{
+  transform : rotate(0deg);
+}
+
+5.0% 
+{
+  transform : rotate(3deg);
+}
+
+10.0% 
+{
+  transform : rotate(-3deg);
+}
+
+15.0% 
+{
+  transform : rotate(0deg);
+}
+
+100.0% 
+{
+  transform : rotate(0deg);
+}
+
+}
+
+@-moz-keyframes wiggle
+{
+0.0% 
+{
+  transform : rotate(0deg);
+}
+
+5.0% 
+{
+  transform : rotate(3deg);
+}
+
+10.0% 
+{
+  transform : rotate(-3deg);
+}
+
+15.0% 
+{
+  transform : rotate(0deg);
+}
+
+100.0% 
+{
+  transform : rotate(0deg);
+}
+
+}
+
+@-ms-keyframes wiggle
+{
+0.0% 
+{
+  transform : rotate(0deg);
+}
+
+5.0% 
+{
+  transform : rotate(3deg);
+}
+
+10.0% 
+{
+  transform : rotate(-3deg);
+}
+
+15.0% 
+{
+  transform : rotate(0deg);
+}
+
+100.0% 
+{
+  transform : rotate(0deg);
+}
+
+}
+
+@-o-keyframes wiggle
+{
+0.0% 
+{
+  transform : rotate(0deg);
+}
+
+5.0% 
+{
+  transform : rotate(3deg);
+}
+
+10.0% 
+{
+  transform : rotate(-3deg);
+}
+
+15.0% 
+{
+  transform : rotate(0deg);
+}
+
+100.0% 
+{
+  transform : rotate(0deg);
+}
+
+}
+
+@keyframes wiggle
+{
+0.0% 
+{
+  transform : rotate(0deg);
+}
+
+5.0% 
+{
+  transform : rotate(3deg);
+}
+
+10.0% 
+{
+  transform : rotate(-3deg);
+}
+
+15.0% 
+{
+  transform : rotate(0deg);
+}
+
+100.0% 
+{
+  transform : rotate(0deg);
+}
+
+}
+
+@-webkit-keyframes loader
+{
+0.0% 
+{
+  left      : 0%;
+  transform : translateX(-100%);
+}
+
+100.0% 
+{
+  left      : 100%;
+  transform : translateX(0%);
+}
+
+}
+
+@-moz-keyframes loader
+{
+0.0% 
+{
+  left      : 0%;
+  transform : translateX(-100%);
+}
+
+100.0% 
+{
+  left      : 100%;
+  transform : translateX(0%);
+}
+
+}
+
+@-ms-keyframes loader
+{
+0.0% 
+{
+  left      : 0%;
+  transform : translateX(-100%);
+}
+
+100.0% 
+{
+  left      : 100%;
+  transform : translateX(0%);
+}
+
+}
+
+@-o-keyframes loader
+{
+0.0% 
+{
+  left      : 0%;
+  transform : translateX(-100%);
+}
+
+100.0% 
+{
+  left      : 100%;
+  transform : translateX(0%);
+}
+
+}
+
+@keyframes loader
+{
+0.0% 
+{
+  left      : 0%;
+  transform : translateX(-100%);
+}
+
+100.0% 
+{
+  left      : 100%;
+  transform : translateX(0%);
+}
+
+}
+
+body,
+section,
+footer,
+nav
+{
+  display        : flex;
+  flex-direction : column;
+  margin         : 0px 0px 0px 0px;
+  padding        : 0px 0px 0px 0px;
+}
+
+p,
+li,
+ul
+{
+  margin : 0px 0px 0px 0px;
+}
+
+p,
+li
+{
+  line-height : 40px;
+}
+
+a
+{
+  color : #9a99dd;
+}
+
+a:hover
+{
+  background-color : #efefef;
+  color            : #000000;
+}
+
+::selection
+{
+  background : #eaeaea;
+  color      : #000000;
+}
+
+::-moz-selection
+{
+  background : #eaeaea;
+  color      : #000000;
+}
+
+body
+{
+  font-family      : "Work Sans", sans-serif;
+  font-size        : 22px;
+  color            : #383838;
+  background-color : #fffbf0;
+}
+
+@media all and (max-width: 450px)
+{
+body
+{
+  font-size : 18px;
+}
+
+}
+h1,
+h2,
+h3,
+h4,
+h5
+{
+  margin      : 0px 0px 0px 0px;
+  font-family : "Literata", sans-serif;
+}
+
+
+h1 a
+{
+  color           : #000000;
+  text-decoration : none;
+}
+
+h1 span.beta
+{
+  border-radius : 5px 5px 5px 5px;
+  margin        : 8px 8px 8px 8px;
+  padding       : 2px 2px 2px 2px;
+  background    : #9a99dd;
+  color         : #ffffff;
+  font-size     : 0.4em;
+  font-family   : "Fira Code", monospace;
+  padding-left  : 5px;
+  padding-right : 5px;
+  box-shadow    : 3.7px 4.3px 4.3px hsl(0deg 0% 0% / 0.15);;
+}
+
+h2
+{
+  font-size : 1.3em;
+}
+
+h2 span
+{
+  text-decoration : underline;
+}
+
+h3
+{
+  margin : 30px 30px 30px 30px;
+}
+
+@media all and (max-width: 450px)
+{
+h3
+{
+  margin      : 10px 10px 10px 10px;
+  margin-left : 5px;
+}
+
+}
+div.level-2 > h3
+{
+  margin : 0px 0px 0px 0px;
+}
+
+h4
+{
+  margin-top  : 20px;
+  font-family : "Work Sans", sans-serif;
+}
+
+div.most-things
+{
+  display        : flex;
+  flex-direction : column;
+}
+
+div.most-things.hidden
+{
+  display : none;
+}
+
+div.banner
+{
+  background-color : #ffffff;
+  padding          : 20px 20px 20px 20px;
+  padding-bottom   : 0px;
+}
+
+div.banner div.links
+{
+  padding-top     : 10px;
+  display         : flex;
+  justify-content : space-between;
+}
+
+div.banner div.links div.pages
+{
+  display : flex;
+}
+
+div.banner div.links div.pages span
+{
+  margin-left  : 5px;
+  margin-right : 5px;
+}
+
+div.banner div.links span.active
+{
+  background-color : #fffbf0;
+}
+
+div.banner div.links span
+{
+  border-top-left-radius  : 5px 5px;
+  border-top-right-radius : 5px 5px;
+  background-color        : #ffffff;
+  padding                 : 10px 10px 10px 10px;
+  padding-left            : 10px;
+  padding-right           : 10px;
+  font-size               : 0.84999em;
+}
+
+div.content
+{
+  margin-left    : 40px;
+  display        : flex;
+  flex-direction : column;
+  margin-right   : 40px;
+}
+
+@media all and (max-width: 450px)
+{
+div.content
+{
+  margin : 5px 5px 5px 5px;
+}
+
+}
+div.error
+{
+  padding-left : 10px;
+  border-left  : 5px solid #dd9a99;
+}
+
+div.error b
+{
+  margin-bottom : 20px;
+}
+
+div.legend
+{
+  display        : flex;
+  color          : #787878;
+  font-size      : 0.8em;
+  flex-direction : column;
+}
+
+div.legend div.legend-items
+{
+  display         : flex;
+  flex-direction  : row;
+  justify-content : space-evenly;
+  align-items     : center;
+  flex-wrap       : wrap;
+  align-content   : space-between;
+  gap             : 30px;
+  margin-left     : 20px;
+  margin-right    : 20px;
+}
+
+div.legend div.legend-items div.i
+{
+  display     : flex;
+  align-items : center;
+}
+
+div.legend div.legend-items div.i span.id-num
+{
+  font-size    : 1em;
+  left         : 0px;
+  margin-right : 4px;
+  position     : static;
+}
+
+div.legend div.legend-items div.operation-added,
+div.legend div.legend-items div.operation-removed
+{
+  padding : 5px 5px 5px 5px;
+}
+
+div.legend div.legend-items span.t
+{
+  padding : 5px 5px 5px 5px;
+}
+
+div.sp.operation
+{
+  background-color : #f0f0f0;
+  flex-direction   : row;
+  border-radius    : 20px 0px 0px 20px;
+}
+
+span.highlight-num
+{
+  padding          : 0.5em 0.5em 0.5em 0.5em;
+  border-radius    : 0.5em 0.5em 0.5em 0.5em;
+  background-color : #e6e6fa;
+  box-shadow       : 2.1px 4.3px 4.3px hsl(0deg 0% 0% / 0.25);;
+}
+
+span.id-num
+{
+  font-family   : "Fira Code", monospace;
+  border        : 1px solid #f0f0f0;
+  border-radius : 30px 30px 30px 30px;
+  font-size     : 0.8em;
+  padding       : 5px 5px 5px 5px;
+  padding-left  : 12px;
+  padding-right : 12px;
+  position      : relative;
+}
+
+span.id-num.changed
+{
+  background-color : #ffffff;
+  border           : 1px solid #e6e6fa;
+}
+
+div.all-permissions
+{
+  display        : flex;
+  flex-direction : column;
+}
+
+div.permission-item
+{
+  display        : flex;
+  flex-direction : row;
+  align-items    : center;
+  padding-left   : 10px;
+  margin-top     : 0.59999em;
+  margin-bottom  : 0.59999em;
+}
+
+@media all and (max-width: 1200px)
+{
+div.permission-item
+{
+  flex-direction : column;
+  max-width      : 100%;
+  align-items    : flex-start;
+}
+
+}
+@media all and (max-width: 450px)
+{
+div.permission-item
+{
+  margin : 0px 0px 0px 0px;
+}
+
+}
+div.table,
+div.role
+{
+  font-size : 1.1em;
+}
+
+span.prefix
+{
+  color     : #787878;
+  width     : 200px;
+  min-width : 200px;
+}
+
+span.prefix span.actual-text
+{
+  padding          : 4px 4px 4px 4px;
+  border-radius    : 10px 10px 10px 10px;
+  background-color : #f0f0f0;
+}
+
+pre.row-filter
+{
+  font-family      : "Fira Code", monospace;
+  padding          : 0.4em 0.4em 0.4em 0.4em;
+  padding-right    : 2em;
+  background-color : rgba(255,252,244,77.0);
+  border-radius    : 10px 10px 10px 10px;
+  font-size        : 0.8em;
+  overflow         : auto;
+  box-shadow       : 2.1px 4.3px 4.3px hsl(0deg 0% 0% / 0.25);;
+  white-space      : pre-wrap;
+}
+
+div.permission-content
+{
+  display        : flex;
+  flex-direction : row;
+  align-items    : center;
+  padding        : 10px 10px 10px 10px;
+  flex-grow      : 2;
+}
+
+div.permission-content div.cdots
+{
+  display : none;
+}
+
+div.permission-content div.cdots.viewed
+{
+  display     : flex;
+  margin-left : 10px;
+}
+
+div.permission-content div.content.viewed
+{
+  display : none;
+}
+
+@media all and (max-width: 1200px)
+{
+div.permission-content
+{
+  flex-direction : column;
+  align-items    : flex-start;
+}
+
+}
+@media all and (max-width: 450px)
+{
+div.permission-content
+{
+  padding : 0px 0px 0px 0px;
+  margin  : 0px 0px 0px 0px;
+}
+
+}
+div.permission-atom
+{
+  background-color : #f0f0f0;
+  margin-top       : 1em;
+  margin-bottom    : 1em;
+  border-radius    : 20px 20px 20px 20px;
+  display          : flex;
+  box-shadow       : 3px 3px 16px 0px rgba(154,153,221,0);
+}
+
+@media all and (max-width: 1200px)
+{
+div.permission-atom
+{
+  flex-direction : column;
+}
+
+}
+div.permission-atom.changed
+{
+  box-shadow : 3px 3px 16px 0px rgba(154,153,221,0.7);
+}
+
+div.permission-atom:hover
+{
+  background-color : #f5f5f5;
+}
+
+div.permission-atom:hover span.actual-text
+{
+  background-color : #f5f5f5;
+}
+
+div.tick-box
+{
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+  margin-right    : 2em;
+}
+
+div.tick-box input
+{
+  -webkit-transform : scale(1.3,1.3);
+  -moz-transform    : scale(1.3,1.3);
+  -ms-transform     : scale(1.3,1.3);
+  -o-transform      : scale(1.3,1.3);
+  transform         : scale(1.3,1.3);
+}
+
+div.tick-box label
+{
+  padding : 0.5em 0.5em 0.5em 0.5em;
+}
+
+div.operation
+{
+  display        : flex;
+  flex-direction : column;
+  padding-left   : 0px;
+  margin-top     : 0.29999em;
+  margin-bottom  : 0.29999em;
+  border-radius  : 8px 8px 8px 8px;
+}
+
+div.op
+{
+  display        : flex;
+  flex-direction : row;
+  flex-wrap      : wrap;
+  align-items    : center;
+  font-size      : 0.94999em;
+}
+
+div.op span.Select
+{
+  background-color : #ffffe0;
+}
+
+div.op span.Update
+{
+  background-color : #f0f8ff;
+}
+
+div.op span.Insert
+{
+  background-color : #f0fff0;
+}
+
+div.op span.Delete
+{
+  background-color : #ffe4e1;
+}
+
+div.op span.op
+{
+  box-shadow     : 2.1px 4.3px 4.3px hsl(0deg 0% 0% / 0.25);;
+  font-family    : "Fira Code", monospace;
+  border-radius  : 10px 10px 10px 10px;
+  font-size      : 0.9em;
+  margin-right   : 0.5em;
+  padding        : 0.4em 0.4em 0.4em 0.4em;
+  text-transform : uppercase;
+}
+
+@media all and (max-width: 1200px)
+{
+div.op
+{
+  margin-top : 10px;
+}
+
+}
+div.sql-columns
+{
+  display        : flex;
+  flex-wrap      : wrap;
+  flex-direction : row;
+  align-items    : center;
+}
+
+span.sql-column
+{
+  padding       : 0.29999em 0.29999em 0.29999em 0.29999em;
+  margin        : 0.69999em 0.69999em 0.69999em 0.69999em;
+  border-bottom : 1px solid #000000;
+  font-family   : "Fira Code", monospace;
+  font-size     : 0.9em;
+}
+
+span.simple-text
+{
+  padding      : 0.29999em 0.29999em 0.29999em 0.29999em;
+  margin-left  : 0.59999em;
+  margin-right : 0.59999em;
+}
+
+a.anchor
+{
+  text-decoration : none;
+  font-weight     : normal;
+  color           : #000000;
+  padding-right   : 5px;
+  color           : #787878;
+}
+
+a.anchor:hover
+{
+  background-color : #fffbf0;
+}
+
+span.group-header
+{
+  line-height  : 2em;
+  margin-left  : 0.29999em;
+  margin-right : 0.29999em;
+  padding      : 0.2em 0.2em 0.2em 0.2em;
+}
+
+@media all and (max-width: 450px)
+{
+span.group-header
+{
+  margin : 0px 0px 0px 0px;
+}
+
+}
+div.level-1
+{
+  border-left   : 5px solid #e6e6e6;
+  padding       : 1em 1em 1em 1em;
+  margin        : 1em 1em 1em 1em;
+  border-radius : 0.5em 0.5em 0.5em 0.5em;
+  box-shadow    : 2.1px 4.3px 4.3px hsl(0deg 0% 0% / 0.25);;
+}
+
+div.level-1 small.label
+{
+  color          : #787878;
+  text-transform : lowercase;
+}
+
+@media all and (max-width: 450px)
+{
+div.level-1
+{
+  margin  : 0px 0px 0px 0px;
+  padding : 5px 5px 5px 5px;
+}
+
+}
+div.level-2
+{
+  margin : 0.5em 0.5em 0.5em 0.5em;
+}
+
+@media all and (max-width: 450px)
+{
+div.level-2
+{
+  margin : 0px 0px 0px 0px;
+}
+
+}
+div.indicator
+{
+  width         : 20px;
+  border-radius : 20px 0px 0px 20px;
+}
+
+div.diff-item-removed
+{
+  background-image : url("images/removed.svg");
+}
+
+span.diff-item-removed
+{
+  background-color : rgba(241,214,214,153.0);
+}
+
+span.diff-item-removed:hover
+{
+  background-color : rgba(244,224,224,178.0);
+}
+
+div.diff-item-added
+{
+  background-image : url("images/added.svg");
+}
+
+span.diff-item-added
+{
+  background-color : rgba(204,238,204,128.0);
+}
+
+span.diff-item-added:hover
+{
+  background-color : rgba(214,241,214,153.0);
+}
+
+div.operation-removed
+{
+  background-image : url("images/removed-weak.svg");
+  border           : 1px solid #dd9a99;
+  border-radius    : 5px 5px 5px 5px;
+}
+
+div.operation-added
+{
+  background-image : url("images/added-weak.svg");
+  border           : 1px solid #99dd9a;
+  border-radius    : 5px 5px 5px 5px;
+}
+
+div.status.wiggle
+{
+  animation        : wiggle 1.5s 1;
+  background-color : rgba(234,248,234,204.0);
+}
+
+
+div.status.wiggle div.progress span.progress
+{
+  background-color : #99dd9a;
+}
+
+div.status
+{
+  position         : fixed;
+  bottom           : 2em;
+  left             : 2em;
+  width            : calc(500px + 3ch);
+  display          : flex;
+  font-family      : "Fira Code", monospace;
+  flex-direction   : column;
+  align-items      : center;
+  font-size        : 0.69999em;
+  background-color : #f0f0f0;
+  box-shadow       : 2.1px 4.3px 4.3px hsl(0deg 0% 0% / 0.25);;
+  justify-content  : space-between;
+}
+
+div.status div.text
+{
+  padding : 5px 5px 5px 5px;
+}
+
+div.status div.progress
+{
+  display          : flex;
+  width            : 100%;
+  height           : 4px;
+  border-radius    : 5px 5px 5px 5px;
+  background-color : #f0f0f0;
+}
+
+div.status div.progress span.progress
+{
+  background-color : #9a99dd;
+}
+
+@media all and (max-width: 450px)
+{
+div.status
+{
+  width : calc(200px + 3ch);
+}
+
+}
+div.footer
+{
+  align-items     : center;
+  color           : #787878;
+  display         : flex;
+  flex-direction  : column;
+  font-size       : 0.8em;
+  justify-content : center;
+  margin-top      : 100px;
+  margin-bottom   : 100px;
+}
+
+div.regexes
+{
+  display        : flex;
+  flex-direction : column;
+}
+
+div.regexes div.regex
+{
+  display        : flex;
+  flex-direction : row;
+  align-items    : center;
+  padding-top    : 5px;
+  padding-bottom : 5px;
+}
+
+div.regexes label
+{
+  width : 200px;
+}
+
+div.regexes input
+{
+  font-family : "Fira Code", monospace;
+  width       : 350px;
+  padding     : 2px 2px 2px 2px;
+  font-size   : 20px;
+}
+
+div.diff-groups
+{
+  margin-top : 20px;
+}
+
+div#groupingWidget
+{
+  flex-wrap      : wrap;
+  display        : flex;
+  flex-direction : row;
+}
+
+div#groupingWidget div.column
+{
+  align-items    : center;
+  display        : flex;
+  flex-direction : row;
+  padding-top    : 0px;
+}
+
+div.paste
+{
+  margin-top  : 20px;
+  margin-left : 30px;
+  width       : 80%;
+}
+
+div.paste textarea
+{
+  font-family : "Fira Code", monospace;
+  width       : 100%;
+  height      : 600px;
+  padding     : 10px 10px 10px 10px;
+  font-size   : 0.8em;
+}
+
+div.paste span.valid
+{
+  background-color : rgba(183,231,184,77.0);
+  padding          : 5px 5px 5px 5px;
+  padding-left     : 8px;
+  padding-right    : 8px;
+  border-radius    : 5px 5px 5px 5px;
+}
+
+div.paste span.invalid
+{
+  background-color : rgba(231,184,183,77.0);
+  padding          : 5px 5px 5px 5px;
+  padding-left     : 8px;
+  padding-right    : 8px;
+  border-radius    : 5px 5px 5px 5px;
+}
+
+div.paste pre
+{
+  width     : 80%;
+  font-size : 0.8em;
+}
+
+div.paste div.buttons
+{
+  display         : flex;
+  justify-content : space-between;
+  align-content   : center;
+  align-items     : center;
+}
+
+button.selected
+{
+  font-weight     : bold;
+  text-decoration : underline;
+}
+
+button.selected:disabled
+{
+  font-weight     : normal;
+  text-decoration : none;
+}
+
+button
+{
+  font-family   : "Work Sans", sans-serif;
+  padding       : 0.29999em 0.29999em 0.29999em 0.29999em;
+  padding-left  : 0.45em;
+  padding-right : 0.45em;
+  margin        : 0.4em 0.4em 0.4em 0.4em;
+  font-size     : 20px;
+  border-radius : 10px 10px 10px 10px;
+  border        : 0px solid #000000;
+  cursor        : pointer;
+  box-shadow    : 2.1px 4.3px 4.3px hsl(0deg 0% 0% / 0.25);;
+}
+
+button:active
+{
+  -webkit-transform : translate(2px,2px);
+  -moz-transform    : translate(2px,2px);
+  -ms-transform     : translate(2px,2px);
+  -o-transform      : translate(2px,2px);
+  transform         : translate(2px,2px);
+}
+
+button:active:disabled
+{
+  -webkit-transform : none;
+  -moz-transform    : none;
+  -ms-transform     : none;
+  -o-transform      : none;
+  transform         : none;
+}
+
+button:disabled
+{
+  background-color : #e6e6e6;
+}
+
+button:hover
+{
+  background-color : #cfceff;
+}
+
+button:disabled:hover
+{
+  background-color : #e6e6e6;
+  cursor           : not-allowed;
+}
+
+span.src
+{
+  background-color : #ffffff;
+  border           : 1px solid #eaeaea;
+  border-radius    : 10px 10px 10px 10px;
+  padding          : 5px 5px 5px 5px;
+  padding-left     : 0px;
+  font-family      : "Fira Code", monospace;
+  font-size        : 0.8em;
+}
+
+span.src.solo
+{
+  padding-left : 5px;
+}
+
+
+span.src.old::before
+{
+  content          : "old:";
+  border-radius    : 10px 0px 0px 10px;
+  background-color : rgba(238,204,204,128.0);
+  padding          : 5px 5px 5px 5px;
+  padding-left     : 8px;
+  padding-right    : 8px;
+  margin-right     : 5px;
+}
+
+
+span.src.new::before
+{
+  content          : "new:";
+  border-radius    : 10px 0px 0px 10px;
+  background-color : rgba(204,238,204,128.0);
+  padding          : 5px 5px 5px 5px;
+  padding-left     : 8px;
+  padding-right    : 8px;
+  margin-right     : 5px;
+}
+
+ul.diff-info
+{
+  font-family : "Fira Code", monospace;
+  font-size   : 0.9em;
+}
+
+ul.diff-info em
+{
+  font-style : normal;
+}
+
+span.tt
+{
+  font-family : "Fira Code", monospace;
+}
+
+div.option
+{
+  display        : flex;
+  flex-direction : row;
+  align-items    : flex-start;
+  margin-top     : 20px;
+  width          : 90%;
+}
+
+div.option span.name
+{
+  min-width : 300px;
+}
+
+div.option input.token
+{
+  font-family : "Fira Code", monospace;
+  width       : 350px;
+  padding     : 4px 4px 4px 4px;
+  font-size   : 18px;
+  min-width   : 500px;
+}
+
+@media all and (max-width: 1200px)
+{
+div.option input.token
+{
+  width     : 90%;
+  min-width : 90%;
+}
+
+}
+div.option div.inputs
+{
+  display        : flex;
+  flex-direction : column;
+  margin-left    : 10px;
+}
+
+div.option div.help
+{
+  margin-top : 10px;
+  max-width  : 1000px;
+  font-size  : 0.9em;
+  color      : #787878;
+}
+
+div.option p
+{
+  margin-bottom : 10px;
+}
+
+@media all and (max-width: 1200px)
+{
+div.option
+{
+  flex-direction : column;
+}
+
+}
+div.loading.hidden
+{
+  display : none;
+}
+
+div.loading
+{
+  display : flex;
+}
+
+div.loading span.loader
+{
+  height   : 4px;
+  width    : 100%;
+  display  : inline-block;
+  position : relative;
+  overflow : hidden;
+}
+
+div.loading span.loader::after
+{
+  content            : "";
+  width              : 300px;
+  height             : 4px;
+  background-color   : #cfceff;
+  position           : absolute;
+  top                : 0px;
+  left               : 0px;
+  -webkit-box-sizing : border-box;
+  -moz-box-sizing    : border-box;
+  -ms-box-sizing     : border-box;
+  -o-box-sizing      : border-box;
+  box-sizing         : border-box;
+  animation          : loader 8s linear infinite;
+}
+
+.lil-gui
+{
+  --background-color       : #f5f5f5;
+  --text-color             : #383838;
+  --title-background-color : #efefef;
+  --title-text-color       : #383838;
+  --font-family-mono       : Fira Code;
+  --font-size              : 18px;
+  --input-font-size        : 18px;
+  --widget-color           : #ffffff;
+  --focus-color            : #fefefe;
+  --hover-color            : #ffffff;
+  --string-color           : #383838;
+  --padding                : 10px;
+  --spacing                : 15px;
+}
+
+
+/* Generated with Clay, http://fvisser.nl/clay */
