@@ -34,9 +34,9 @@ jobs:
           nix build .#metadelta-docker-image
           export TARBALL_TAG="$(nix eval --raw .#metadelta-docker-image.imageName):$(nix eval --raw .#metadelta-docker-image.imageTag)"
           echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u $ --password-stdin
-          export VERSION="$(echo $RELEASE_TAG | sed 's/^metadelta-cli-//')"
+          export VERSION="$(echo $RELEASE_TAG | sed 's/^metadelta-//')"
           docker load -i ./result
-          docker tag "$TARBALL_TAG" ghcr.io/invariantclub/metadelta-cli:$VERSION
-          docker tag "$TARBALL_TAG" ghcr.io/invariantclub/metadelta-cli:latest
-          docker push ghcr.io/invariantclub/metadelta-cli:$VERSION
-          docker push ghcr.io/invariantclub/metadelta-cli:latest
+          docker tag "$TARBALL_TAG" ghcr.io/invariantclub/metadelta:$VERSION
+          docker tag "$TARBALL_TAG" ghcr.io/invariantclub/metadelta:latest
+          docker push ghcr.io/invariantclub/metadelta:$VERSION
+          docker push ghcr.io/invariantclub/metadelta:latest
