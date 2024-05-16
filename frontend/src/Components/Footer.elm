@@ -94,5 +94,9 @@ view (Settings settings) =
         [ p []
             [ text "Built with love ❤️ on our one and only planet 🌏 :)"
             ]
-        , p [] [ a [ href "https://invariant.club" ] [ text "Invariant Club" ] ]
+        , p []
+            [ a [ href "https://invariant.club" ] [ text "invariant.club" ]
+            , text " — "
+            , a [ href "https://github.com/InvariantClub" ] [ text "GitHub" ]
+            ]
         ]
