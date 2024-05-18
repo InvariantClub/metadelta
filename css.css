@@ -255,8 +255,8 @@ a
 
 a:hover
 {
-  background-color : #efefef;
-  color            : #000000;
+  font-style : italic;
+  color      : #000000;
 }
 
 ::selection
@@ -273,10 +273,9 @@ a:hover
 
 body
 {
-  font-family      : "Work Sans", sans-serif;
-  font-size        : 22px;
-  color            : #383838;
-  background-color : #fffbf0;
+  font-family : "Work Sans", sans-serif;
+  font-size   : 22px;
+  color       : #383838;
 }
 
 @media all and (max-width: 450px)
@@ -366,7 +365,7 @@ div.most-things.hidden
 
 div.banner
 {
-  background-color : #ffffff;
+  background-color : #fffbf0;
   padding          : 20px 20px 20px 20px;
   padding-bottom   : 0px;
 }
@@ -391,14 +390,14 @@ div.banner div.links div.pages span
 
 div.banner div.links span.active
 {
-  background-color : #fffbf0;
+  background-color : #ffffff;
 }
 
 div.banner div.links span
 {
   border-top-left-radius  : 5px 5px;
   border-top-right-radius : 5px 5px;
-  background-color        : #ffffff;
+  background-color        : #fffbf0;
   padding                 : 10px 10px 10px 10px;
   padding-left            : 10px;
   padding-right           : 10px;
@@ -644,16 +643,6 @@ div.permission-atom.changed
   box-shadow : 3px 3px 16px 0px rgba(154,153,221,0.7);
 }
 
-div.permission-atom:hover
-{
-  background-color : #f5f5f5;
-}
-
-div.permission-atom:hover span.actual-text
-{
-  background-color : #f5f5f5;
-}
-
 div.tick-box
 {
   display         : flex;
@@ -794,6 +783,7 @@ div.level-1
   padding       : 1em 1em 1em 1em;
   margin        : 1em 1em 1em 1em;
   border-radius : 0.5em 0.5em 0.5em 0.5em;
+  background    : #fafafa;
   box-shadow    : 2.1px 4.3px 4.3px hsl(0deg 0% 0% / 0.25);;
 }
 
