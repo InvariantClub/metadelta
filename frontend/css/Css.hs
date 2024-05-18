@@ -478,6 +478,7 @@ groupings = do
     allPadding      $ em 1
     allMargin       $ em 1
     allBorderRadius $ em 0.5
+    background (rgb 250 250 250)
     standardShadow
     withPhoneDisplay $ do
       allMargin  (px 0)
@@ -574,10 +575,11 @@ permissions = do
   div # ".permission-atom.changed" ? do
     "box-shadow" -: "3px 3px 16px 0px rgba(154,153,221,0.7)"
 
-  div # ".permission-atom" # hover ? do
-    backgroundColor almostSoftBgColour
-    span # ".actual-text" ? do
-      backgroundColor almostSoftBgColour
+  -- Don't do things on hover.
+  -- div # ".permission-atom" # hover ? do
+  --   backgroundColor bgColour
+  --   span # ".actual-text" ? do
+  --     backgroundColor bgColour
 
 
   div # ".tick-box" ? do
@@ -727,7 +729,7 @@ pageLayout = do
     display none
 
   div # ".banner" ? do
-    backgroundColor strongBgColour
+    backgroundColor bgColour
     allPadding    $ px 20
     paddingBottom $ px 0
 
@@ -741,11 +743,11 @@ pageLayout = do
           marginLeft  $ px 5
           marginRight $ px 5
       span # ".active" ? do
-        backgroundColor bgColour
+        backgroundColor white
       span ? do
         borderTopLeftRadius  (px 5) (px 5)
         borderTopRightRadius (px 5) (px 5)
-        backgroundColor white
+        backgroundColor bgColour
         allPadding   $ px 10
         paddingLeft  $ px 10
         paddingRight $ px 10
@@ -816,7 +818,7 @@ fonts = do
     coreTextFont
     fontSize (px 22)
     color textColour
-    backgroundColor bgColour
+    -- backgroundColor bgColour
     withPhoneDisplay $ do
       fontSize (px 18)
 
@@ -845,7 +847,8 @@ basics = do
     color linkColour
 
   a # hover ? do
-    backgroundColor linkSoftColour2
+    fontStyle italic
+    -- backgroundColor linkSoftColour2
     color black
 
   let selectionStyle =
