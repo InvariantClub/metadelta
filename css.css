@@ -250,7 +250,7 @@ li
 
 a
 {
-  color : #9a99dd;
+  color : #000000;
 }
 
 a:hover
@@ -273,7 +273,7 @@ a:hover
 
 body
 {
-  font-family : "Work Sans", sans-serif;
+  font-family : "Open Sans", sans-serif;
   font-size   : 22px;
   color       : #383838;
 }
@@ -308,7 +308,7 @@ h1 span.beta
   border-radius : 5px 5px 5px 5px;
   margin        : 8px 8px 8px 8px;
   padding       : 2px 2px 2px 2px;
-  background    : #9a99dd;
+  background    : rgba(79,40,204,51.0);
   color         : #ffffff;
   font-size     : 0.4em;
   font-family   : "Fira Code", monospace;
@@ -320,11 +320,6 @@ h1 span.beta
 h2
 {
   font-size : 1.3em;
-}
-
-h2 span
-{
-  text-decoration : underline;
 }
 
 h3
@@ -349,7 +344,7 @@ div.level-2 > h3
 h4
 {
   margin-top  : 20px;
-  font-family : "Work Sans", sans-serif;
+  font-family : "Open Sans", sans-serif;
 }
 
 div.most-things
@@ -909,7 +904,7 @@ div.status div.progress
 
 div.status div.progress span.progress
 {
-  background-color : #9a99dd;
+  background-color : rgba(79,40,204,51.0);
 }
 
 @media all and (max-width: 450px)
@@ -1042,7 +1037,7 @@ button.selected:disabled
 
 button
 {
-  font-family   : "Work Sans", sans-serif;
+  font-family   : "Open Sans", sans-serif;
   padding       : 0.29999em 0.29999em 0.29999em 0.29999em;
   padding-left  : 0.45em;
   padding-right : 0.45em;
