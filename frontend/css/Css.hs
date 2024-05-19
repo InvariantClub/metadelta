@@ -22,7 +22,7 @@ padding0 = padding (px 0) (px 0) (px 0) (px 0)
 
 coreTextFont = fontFamily ["Open Sans"] [sansSerif]
 monoFont     = fontFamily ["Fira Code"] [monospace]
-titleFont    = fontFamily ["Literata"]  [sansSerif]
+titleFont    = fontFamily ["Libre Baskerville"] [sansSerif]
 menuFont     = coreTextFont
 
 bgColour :: Color
@@ -773,11 +773,15 @@ pageLayout = do
 
 headings :: Css
 headings = do
-  h1 <> h2 <> h3 <> h4 <> h5 ? do
+  h1 ? do
     margin0
     titleFont
 
+  h2 <> h3 <> h4 <> h5 ? do
+    margin0
+
   h1 ? do
+    fontStyle italic
     a ? do
       color black
       textDecoration none
