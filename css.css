@@ -286,16 +286,24 @@ body
 }
 
 }
-h1,
+h1
+{
+  margin      : 0px 0px 0px 0px;
+  font-family : "Libre Baskerville", sans-serif;
+}
+
 h2,
 h3,
 h4,
 h5
 {
-  margin      : 0px 0px 0px 0px;
-  font-family : "Literata", sans-serif;
+  margin : 0px 0px 0px 0px;
 }
 
+h1
+{
+  font-style : italic;
+}
 
 h1 a
 {
