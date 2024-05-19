@@ -20,7 +20,7 @@ allBorderRadius n = borderRadius n n n n
 margin0  = margin  (px 0) (px 0) (px 0) (px 0)
 padding0 = padding (px 0) (px 0) (px 0) (px 0)
 
-coreTextFont = fontFamily ["Work Sans"] [sansSerif]
+coreTextFont = fontFamily ["Open Sans"] [sansSerif]
 monoFont     = fontFamily ["Fira Code"] [monospace]
 titleFont    = fontFamily ["Literata"]  [sansSerif]
 menuFont     = coreTextFont
@@ -44,8 +44,9 @@ softTextColour :: Color
 softTextColour = "#787878"
 
 linkColour :: Color
-linkColour = "#9a99dd"
+-- linkColour = "#9a99dd"
 -- linkColour = "#b84db2"
+linkColour = darken 0.2 otherStrongColour
 
 otherStrongColour :: Color
 otherStrongColour = "#6232ff"
@@ -795,8 +796,8 @@ headings = do
 
   h2 ? do
     fontSize (em 1.3)
-    span ? do
-      textDecoration underline
+    -- span ? do
+    --   textDecoration underline
 
   h3 ? do
     allMargin $ px 30
@@ -845,7 +846,7 @@ basics = do
     lineHeight (px 40)
 
   a ? do
-    color linkColour
+    color black
 
   a # hover ? do
     fontStyle italic
